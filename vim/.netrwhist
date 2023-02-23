@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/etc/nixos/pkg/config'
+let g:netrw_dirhist_6='/etc/nixos/pkg'
+let g:netrw_dirhist_5='/etc/nixos/secret'
+let g:netrw_dirhist_4='/home/cva/.config/gtk-3.0'
+let g:netrw_dirhist_3='/etc/nixos'
+let g:netrw_dirhist_2='/home/cva/files/devel/nixpkgs'
+let g:netrw_dirhist_1='/etc/nixos'
+let g:netrw_dirhist_0='/home/cva/dl/xfe'
+let g:netrw_dirhist_9='/home/cva/dl/i3status'
+let g:netrw_dirhist_8='/home/cva/.config/rofi'
