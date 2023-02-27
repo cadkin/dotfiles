@@ -1,0 +1,16 @@
+XTerm.vt100.reverseVideo:   true
+xterm*utf8Title:            true
+
+URxvt*reverseVideo:         true
+URxvt*scrollTtyOutput:      false
+URxvt*scrollWithBuffer:     true
+URxvt*scrollTtyKeypress:    true
+URxvt*saveLines:            9999
+URxvt*scrollBar:            false
+URxvt*font:                 xft:monospace:size=9
+URxvt*depth:                32
+
+Sxiv.background:            #222222
+Sxiv.foreground:            #bbbbbb
+
+Xft.dpi:                    140
