@@ -1,0 +1,24 @@
+configuration {
+	modi: "combi,run,filebrowser";
+	font: "Monospace 15";
+	show-icons: true;
+	run-shell-command: "{terminal} -e bash -ic "{cmd} && read"";
+	combi-modi: "window,drun,run,ssh";
+/*	display-filebrowser: "Shift+Enter";*/
+/*	kb-mode-next: "Shift+Right,Control+Tab";*/
+/*	kb-mode-previous: "Shift+Left,Control+ISO_Left_Tab";*/
+
+    timeout {
+        action: "kb-cancel";
+        delay:  0;
+    }
+    filebrowser {
+        directories-first: true;
+        sorting-method:    "name";
+    }
+    combi {
+        modi: "window,run,drun,ssh";
+    }
+}
+//@theme "arthur"
+@theme "/run/current-system/sw/share/rofi/themes/sidebar.rasi"
