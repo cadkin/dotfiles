@@ -1,0 +1,23 @@
+[global]
+    monitor = 1
+    follow = mouse
+    font = "IPAPGothic 10"
+    corner_radius = 10
+    offset = 10x20
+    max_icon_size = 128
+
+[urgency-low]
+    background = "#1E0721"
+    foreground = "#9BA9AB"
+    highlight = "#9BA9AB"
+
+[urgency_normal]
+    background = "#444A65"
+    foreground = "#EBEEEE"
+    highlight = "#EBEEEE"
+
+[urgency_critical]
+    background = "#EBEEEE"
+    foreground = "#601D1D"
+    frame_color = "#601D1D"
+    highlight = "#601D1D"
