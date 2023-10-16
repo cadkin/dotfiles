@@ -12,39 +12,39 @@ general {
 }
 
 order += "load"
+order += "memory"
 order += "disk /"
-#order += "ethernet enp30s0"
-order += "wireless wlp166s0"
+order += "wireless _first_"
 order += "battery all"
 order += "volume master"
 order += "tztime local"
 
 load {
-    format = "%1min"
+    format = "🖥: %1min"
 }
 
-ethernet enp30s0 {
-    format_up = "enp30s0: %ip (%speed)"
-    format_down = "enp30s0: down"
+wireless _first_ {
+    format_up = "🖧: %ip"
+    format_down = "🖧: down"
 }
 
-wireless wlp166s0 {
-    format_up = "wlp166s0: %ip (%quality on %essid)"
-    format_down = "wlp166s0: down"
+tztime local {
+    format = "🗓: [%Y-%m-%d]  ⏲: [%H:%M:%S]"
+}
+
+disk "/" {
+    format = "🖴: %avail"
 }
 
 battery all {
     format = "%status %percentage %remaining"
     integer_battery_capacity = true
     last_full_capacity = true
-}
+    status_chr = "⚡"
+    status_bat = "⏻"
+    status_unk = "?"
+    status_full = "⏼"
 
-tztime local {
-    format = "%Y-%m-%d %H:%M:%S"
-}
-
-disk "/" {
-    format = "%avail"
 }
 
 volume master {
@@ -53,4 +53,12 @@ volume master {
 	device = "default"
 	mixer = "Master"
 	mixer_idx = 0
+}
+
+
+memory {
+    format = "🗐: %available"
+    memory_used_method = memavailable
+    threshold_degraded = "10%"
+    threshold_critical = "5%"
 }
